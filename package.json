@@ -11,6 +11,7 @@
     },
     
     "scripts": {
+        "start": "tsc && node dist/index.js"
         "test": "hereby runtests-parallel --light=false",
         "test:eslint-rules": "hereby run-eslint-rules-tests",
         "build": "npm run build:compiler && npm run build:tests",
@@ -40,5 +41,5 @@
         "npm": "8.19.4"
     },
     "gitHead": "a5e123d9e0690fcea92878ea8a0a382922009fc9"
-    "start": "tsc && node dist/index.js"
+    
 }
