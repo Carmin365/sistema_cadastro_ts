@@ -4,17 +4,8 @@
     "homepage": "https://www.typescriptlang.org/",
     "version": "^5.7.3",
     "license": "MIT",
-    "description": "TypeScript is a language for application scale JavaScript development",
-    "keywords": [
-        "TypeScript",
-        "Microsoft",
-        "compiler",
-        "language",
-        "javascript"
-    ],
-    "bugs": {
-        "url": "https://github.com/microsoft/TypeScript/issues"
-    },
+    "description": "Sistema de cadastro de usuários com TypeScript",
+    
     "repository": {
         "type": "git",
         "url": "https://github.com/microsoft/TypeScript.git"
