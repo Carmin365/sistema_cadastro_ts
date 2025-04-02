@@ -7,7 +7,7 @@
     
     "repository": {
         "type": "git",
-        "url": "https://github.com/microsoft/TypeScript.git"
+        "url": "https://github.com/Carmin365/cadastro-ts.git"
     },
     "main": "./lib/typescript.js",
     "typings": "./lib/typescript.d.ts",
