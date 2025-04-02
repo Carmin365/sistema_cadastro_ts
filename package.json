@@ -1,8 +1,8 @@
 {
-    "name": "typescript",
+    "name": "cadastro-ts",
     "author": "Microsoft Corp.",
     "homepage": "https://www.typescriptlang.org/",
-    "version": "5.7.3",
+    "version": "^5.7.3",
     "license": "Apache-2.0",
     "description": "TypeScript is a language for application scale JavaScript development",
     "keywords": [
@@ -117,4 +117,5 @@
         "npm": "8.19.4"
     },
     "gitHead": "a5e123d9e0690fcea92878ea8a0a382922009fc9"
+    "start": "tsc && node dist/index.js"
 }
