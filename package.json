@@ -1,7 +1,6 @@
 {
     "name": "cadastro-ts",
     "author": "Carmin Dias",
-    "homepage": "https://www.typescriptlang.org/",
     "version": "^5.7.3",
     "license": "MIT",
     "description": "Sistema de cadastro de usuários com TypeScript",
