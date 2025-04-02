@@ -3,7 +3,7 @@
     "author": "Carmin Dias",
     "homepage": "https://www.typescriptlang.org/",
     "version": "^5.7.3",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "description": "TypeScript is a language for application scale JavaScript development",
     "keywords": [
         "TypeScript",
