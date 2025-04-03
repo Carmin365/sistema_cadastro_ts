@@ -12,18 +12,10 @@
     
     "scripts": {
         "start": "tsc && node dist/index.js"
-        "test": "hereby runtests-parallel --light=false",
-        "test:eslint-rules": "hereby run-eslint-rules-tests",
-        "build": "npm run build:compiler && npm run build:tests",
-        "build:compiler": "hereby local",
-        "build:tests": "hereby tests",
-        "build:tests:notypecheck": "hereby tests --no-typecheck",
-        "clean": "hereby clean",
-        "gulp": "hereby",
-        "lint": "hereby lint",
-        "knip": "hereby knip",
-        "format": "dprint fmt",
-        "setup-hooks": "node scripts/link-hooks.mjs"
+        "build": "tsc",
+        "dev": "ts-node src/index.ts",
+        "lint": "eslint src --ext .ts",
+        "test": "jest"
     },
     "browser": {
         "fs": false,
