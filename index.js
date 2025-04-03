@@ -10,15 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataDeNascimento = document.querySelector("#dataDeNascimento") .value();
     const nivel = document.querySelector("#nivel") .value();
 
-    const DadosDaBaseDeDados = {
-        nome: nome.value,
-        email: email.value,
-        dataDeNascimento: dataDeNascimento.value,
-        nivel: nivel.value
-    };
-    // Armazenamento dos dados na base de Dados.
-        console.log('Dados do Cadastro:' , DadosDaBaseDeDados);
+            if (!nome || !email || !dataDeNascimento || !nivel) {
+                alert("Preencha todos os campos corretamente.");
+                return;
+            }
+            
+        console.log("Nome:", nome);
+        console.log("Email:", email);
+        console.log("Data de Nascimento:", dataDeNascimento);
+        cosole.log("Nível:", nivel);
     
-    // Confirmação do cadastro
-        alert('Seu cadastro foi concluído!');
+        alert("Cadastro concluído!");
+            furmulario.reset();
    });
+
+}
+});
