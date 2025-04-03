@@ -1,22 +1,28 @@
-const formularioDeCadastro = document.getElementById('formularioDeCadastro') as HTMLFormElement;
-
-formularioDeCadastro.addEventListener('submit' , function(event){
-    event.preventDefault();
-
-    const nome = document.getElementById('nome') as HTMLInputElement;
-    const email = document.getElementById('email') as HTMLInputElement;
-    const dataDeNascimento = document.getElementById('dataDeNascimento') as HTMLInputElement;
-    const nivel = document.getElementById('nivel') as HTMLInputElement;
-
-    const DadosDaBaseDeDados = {
-        nome: nome.value,
-        email: email.value,
-        dataDeNascimento: dataDeNascimento.value,
-        nivel: nivel.value
-    };
-    // Armazenamento dos dados na base de Dados.
-        console.log('Dados do Cadastro:' , DadosDaBaseDeDados);
+document.addEventListener('DOMContentLoaded', () => {
+    const formulario = document.querySelector("#formularioDeCadastro");
     
-    // Confirmação do cadastro
-        alert('Seu cadastro foi concluído!');
+    if(formulario) {
+        formulario.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+    const nome = document.querySelector("#nome") .value.trim();
+    const email = document.querySelector("#email") .value.trim();
+    const dataDeNascimento = document.querySelector("#dataDeNascimento") .value();
+    const nivel = document.querySelector("#nivel") .value();
+
+            if (!nome || !email || !dataDeNascimento || !nivel) {
+                alert("Preencha todos os campos corretamente.");
+                return;
+            }
+            
+        console.log("Nome:", nome);
+        console.log("Email:", email);
+        console.log("Data de Nascimento:", dataDeNascimento);
+        cosole.log("Nível:", nivel);
+    
+        alert("Cadastro concluído!");
+            furmulario.reset();
    });
+
+}
+});
