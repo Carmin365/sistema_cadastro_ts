@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
         formulario.addEventListener("submit", (event) => {
             event.preventDefault();
 
-    const nome = document.getElementById('nome') as HTMLInputElement;
-    const email = document.getElementById('email') as HTMLInputElement;
-    const dataDeNascimento = document.getElementById('dataDeNascimento') as HTMLInputElement;
+    const nome = document.querySelector("#nome") .value.trim();
+    const email = document.querySelector("#email") .value.trim();
+    const dataDeNascimento = document.querySelector("#dataDeNascimento") .value.trim();
     const nivel = document.getElementById('nivel') as HTMLInputElement;
 
     const DadosDaBaseDeDados = {
