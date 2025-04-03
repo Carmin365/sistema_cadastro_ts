@@ -1,7 +1,9 @@
-const formularioDeCadastro = document.getElementById('formularioDeCadastro') as HTMLFormElement;
-
-formularioDeCadastro.addEventListener('submit' , function(event){
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    const formulario = document.querySelector("#formularioDeCadastro");
+    
+    if(formulario) {
+        formulario.addEventListener("submit", (event) => {
+            event.preventDefault();
 
     const nome = document.getElementById('nome') as HTMLInputElement;
     const email = document.getElementById('email') as HTMLInputElement;
