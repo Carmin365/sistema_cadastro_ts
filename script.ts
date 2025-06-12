@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cosole.log("Nível:", nivel);
     
         alert("Cadastro concluído!");
-            furmulario.reset();
+            formulario.reset();
    });
 
 }
