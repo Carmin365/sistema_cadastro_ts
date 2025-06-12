@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Nome:", nome);
         console.log("Email:", email);
         console.log("Data de Nascimento:", dataDeNascimento);
-        cosole.log("Nível:", nivel);
+        console.log("Nível:", nivel);
     
         alert("Cadastro concluído!");
             formulario.reset();
