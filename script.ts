@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const nome = document.querySelector("#nome") .value.trim();
     const email = document.querySelector("#email") .value.trim();
-    const dataDeNascimento = document.querySelector("#dataDeNascimento") .value();
-    const nivel = document.querySelector("#nivel") .value();
+    const dataDeNascimento = document.querySelector("#dataDeNascimento") .value;
+    const nivel = document.querySelector("#nivel") .value;
 
             if (!nome || !email || !dataDeNascimento || !nivel) {
                 alert("Preencha todos os campos corretamente.");
